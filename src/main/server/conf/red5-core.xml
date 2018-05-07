@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" 
-    xmlns:lang="http://www.springframework.org/schema/lang" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-    http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     
     <!-- DO NOT FORMAT THIS FILE IN ECLIPSE -->
     
@@ -51,9 +49,7 @@
     <!-- RTMP Decoding -->
     <!-- Use injection to set the max packet size -->
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
-        <property name="staticMethod">
-            <value>org.red5.server.net.rtmp.codec.RTMPProtocolDecoder.setMaxPacketSize</value>
-        </property>
+        <property name="staticMethod" value="org.red5.server.net.rtmp.codec.RTMPProtocolDecoder.setMaxPacketSize"/>
         <property name="arguments" value="${rtmp.max_packet_size}"/>
     </bean>
 
