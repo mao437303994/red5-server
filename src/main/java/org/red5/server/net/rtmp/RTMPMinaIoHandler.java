@@ -53,6 +53,7 @@ public class RTMPMinaIoHandler extends IoHandlerAdapter {
     /** {@inheritDoc} */
     @Override
     public void sessionCreated(IoSession session) throws Exception {
+
         log.debug("Session created RTMP");
         // add rtmpe filter, rtmp protocol filter is added upon successful handshake
         session.getFilterChain().addFirst("rtmpeFilter", new RTMPEIoFilter());

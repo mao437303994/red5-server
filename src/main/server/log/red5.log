@@ -1,0 +1,101 @@
+2018-05-08 21:37:07,530 [main] INFO  org.red5.server.Launcher - Red5 Server 1.0.9 (https://github.com/Red5)
+2018-05-08 21:37:07,588 [main] INFO  o.s.c.s.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@735f7ae5: startup date [Tue May 08 21:37:07 CST 2018]; root of context hierarchy
+2018-05-08 21:37:07,640 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [red5.xml]
+2018-05-08 21:37:07,760 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jee-container.xml]
+2018-05-08 21:37:07,930 [main] INFO  o.r.spring.Red5ApplicationContext - setApplicationContext: org.springframework.context.support.FileSystemXmlApplicationContext@735f7ae5: startup date [Tue May 08 21:37:07 CST 2018]; root of context hierarchy
+2018-05-08 21:37:07,931 [main] INFO  o.r.spring.Red5ApplicationContext - Red5ApplicationContext init
+2018-05-08 21:37:07,932 [main] INFO  o.r.spring.Red5ApplicationContext - Refreshing ApplicationContext 'red5.common': startup date [Tue May 08 21:37:07 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@735f7ae5
+2018-05-08 21:37:07,933 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [red5-common.xml]
+2018-05-08 21:37:08,836 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-05-08 21:37:08,839 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'schedulingService' has been autodetected for JMX exposure
+2018-05-08 21:37:08,840 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'clientBroadcastStream' has been autodetected for JMX exposure
+2018-05-08 21:37:08,985 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'schedulingService': registering with JMX server as MBean [org.red5.server:name=schedulingService,type=QuartzSchedulingService]
+2018-05-08 21:37:08,996 [main] INFO  o.r.spring.Red5ApplicationContext - setApplicationContext: org.springframework.context.support.FileSystemXmlApplicationContext@735f7ae5: startup date [Tue May 08 21:37:07 CST 2018]; root of context hierarchy
+2018-05-08 21:37:08,997 [main] INFO  o.r.spring.Red5ApplicationContext - Red5ApplicationContext init
+2018-05-08 21:37:08,997 [main] INFO  o.r.spring.Red5ApplicationContext - Refreshing ApplicationContext 'red5.core': startup date [Tue May 08 21:37:08 CST 2018]; parent: ApplicationContext 'red5.common'
+2018-05-08 21:37:08,997 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [red5-core.xml]
+2018-05-08 21:37:09,105 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - RTMP will be bound to [0.0.0.0:1935]
+2018-05-08 21:37:09,105 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - RTMP Mina Transport Settings
+Acceptor style: default I/O threads: 16
+TCP no-delay: true keep-alive: false
+2018-05-08 21:37:09,227 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - Traffic class modification is disabled
+2018-05-08 21:37:09,228 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - Send buffer size: 65536 recv buffer size: 65536 so linger: -1 traffic class: 0
+2018-05-08 21:37:09,266 [main] INFO  org.red5.server.ContextLoader - ContextLoader init
+2018-05-08 21:37:09,270 [main] INFO  org.red5.server.ContextLoader - Loading: default.context = ${red5.root}/webapps/red5-default.xml => E:/red5/my/server/red5-server/webapps/red5-default.xml
+2018-05-08 21:37:09,271 [main] INFO  o.s.c.s.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@21d03963: startup date [Tue May 08 21:37:09 CST 2018]; parent: ApplicationContext 'red5.common'
+2018-05-08 21:37:09,273 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from file [E:\red5\my\server\red5-server\webapps\red5-default.xml]
+2018-05-08 21:37:09,363 [main] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:09,373 [main] INFO  o.red5.server.plugin.PluginLauncher - Loaded plugin: org.red5.net.websocket.WebSocketPlugin
+2018-05-08 21:37:09,374 [main] INFO  org.red5.server.tomcat.WarDeployer - War deployer service created
+2018-05-08 21:37:09,380 [main] INFO  org.red5.server.tomcat.WarDeployer - Starting WarDeployer
+2018-05-08 21:37:09,382 [main] INFO  org.red5.server.tomcat.WarDeployer - Deploy wars without app start
+2018-05-08 21:37:09,421 [main] INFO  o.r.n.websocket.WebSocketTransport - WebSocket (ws) will be bound to [0.0.0.0:8081]
+2018-05-08 21:37:09,435 [main] INFO  o.r.n.websocket.WebSocketTransport - started  websocket transport
+2018-05-08 21:37:09,584 [main] INFO  org.red5.server.tomcat.TomcatLoader - Loading Tomcat
+2018-05-08 21:37:09,585 [main] INFO  org.red5.server.tomcat.TomcatLoader - Server root: E:/red5/my/server/red5-server
+2018-05-08 21:37:09,585 [main] INFO  org.red5.server.tomcat.TomcatLoader - Config root: E:/red5/my/server/red5-server/conf
+2018-05-08 21:37:09,605 [main] INFO  org.red5.server.tomcat.TomcatLoader - Application root: E:/red5/my/server/red5-server/webapps
+2018-05-08 21:37:09,773 [main] INFO  org.red5.server.tomcat.TomcatLoader - Starting Tomcat servlet engine
+2018-05-08 21:37:09,902 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\red5\my\server\red5-server\\lib\native]
+2018-05-08 21:37:09,908 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-5080"]
+2018-05-08 21:37:09,921 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-05-08 21:37:09,936 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-05-08 21:37:09,937 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-05-08 21:37:10,067 [0.0.0.0-startStop-1] INFO  o.a.catalina.startup.ContextConfig - No global web.xml found
+2018-05-08 21:37:10,156 [0.0.0.0-startStop-1] INFO  o.a.c.c.C.[.[0.0.0.0].[/] - No Spring WebApplicationInitializer types detected on classpath
+2018-05-08 21:37:10,220 [0.0.0.0-startStop-1] INFO  o.a.c.c.C.[.[0.0.0.0].[/live] - No Spring WebApplicationInitializer types detected on classpath
+2018-05-08 21:37:10,302 [0.0.0.0-startStop-1] INFO  o.a.c.c.C.[.[0.0.0.0].[/chat] - No Spring WebApplicationInitializer types detected on classpath
+2018-05-08 21:37:10,403 [0.0.0.0-startStop-1] INFO  o.a.c.c.C.[.[0.0.0.0].[/vod] - No Spring WebApplicationInitializer types detected on classpath
+2018-05-08 21:37:10,469 [0.0.0.0-startStop-1] INFO  o.a.c.c.C.[.[0.0.0.0].[/installer] - No Spring WebApplicationInitializer types detected on classpath
+2018-05-08 21:37:10,527 [0.0.0.0-startStop-1] INFO  o.a.c.c.C.[.[0.0.0.0].[/oflaDemo] - No Spring WebApplicationInitializer types detected on classpath
+2018-05-08 21:37:10,552 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-5080"]
+2018-05-08 21:37:10,572 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized:  path: E:\red5\my\server\red5-server\webapps\root\
+2018-05-08 21:37:10,573 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized: /live path: E:\red5\my\server\red5-server\webapps\live\
+2018-05-08 21:37:10,574 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized: /chat path: E:\red5\my\server\red5-server\webapps\chat\
+2018-05-08 21:37:10,574 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized: /vod path: E:\red5\my\server\red5-server\webapps\vod\
+2018-05-08 21:37:10,574 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized: /installer path: E:\red5\my\server\red5-server\webapps\installer\
+2018-05-08 21:37:10,574 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized: /oflaDemo path: E:\red5\my\server\red5-server\webapps\oflaDemo\
+2018-05-08 21:37:10,574 [main] INFO  org.red5.server.tomcat.TomcatLoader - Dedicated RTMPT server configuration was not specified
+2018-05-08 21:37:10,576 [main] INFO  o.r.server.service.ShutdownServer - JEE server was found: TomcatLoader [serviceEngineName=red5Engine]
+2018-05-08 21:37:10,598 [Loader:] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue May 08 21:37:10 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@21d03963
+2018-05-08 21:37:10,605 [Loader:] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2018-05-08 21:37:10,636 [Loader:] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:10,650 [Loader:] INFO  org.red5.server.scope.WebScope - Set server [Server@58c520abmap[[empty]]]
+2018-05-08 21:37:10,655 [Loader:] INFO  org.red5.server.scope.Scope - Scope null name reset to:  disallowed
+2018-05-08 21:37:10,659 [Loader:] INFO  org.red5.server.Server - Add mapping global: default host:  context: null
+2018-05-08 21:37:10,660 [Loader:] INFO  org.red5.server.scope.Scope - Invalid scope name, null is not allowed
+2018-05-08 21:37:10,660 [Loader:] WARN  org.red5.server.scope.Scope - Invalid scope rejected: Scope [name=null, path=/default, type=APPLICATION, autoStart=true, creationTime=1525786630637, depth=1, enabled=true, running=false]
+2018-05-08 21:37:10,660 [Loader:] WARN  org.red5.server.scope.Scope - Scope not added to parent
+2018-05-08 21:37:10,660 [Loader:] INFO  org.red5.server.scope.WebScope - Webscope already registered; remove the 'init-method' from your 'web.scope' bean to prevent this message in the future.
+2018-05-08 21:37:10,666 [Loader:/live] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue May 08 21:37:10 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@21d03963
+2018-05-08 21:37:10,668 [Loader:/live] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2018-05-08 21:37:10,691 [Loader:/live] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:10,692 [Loader:/live] INFO  org.red5.server.scope.WebScope - Set server [Server@58c520abmap['/' -> 'default']]
+2018-05-08 21:37:10,694 [Loader:/live] INFO  org.red5.server.Server - Add mapping global: default host:  context: live
+2018-05-08 21:37:10,710 [Loader:/chat] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue May 08 21:37:10 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@21d03963
+2018-05-08 21:37:10,711 [Loader:/chat] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2018-05-08 21:37:10,747 [Loader:/chat] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:10,750 [Loader:/chat] INFO  org.red5.server.scope.WebScope - Set server [Server@58c520abmap['/live' -> 'default', '/' -> 'default']]
+2018-05-08 21:37:10,751 [Loader:/chat] INFO  org.red5.server.Server - Add mapping global: default host:  context: chat
+2018-05-08 21:37:10,754 [Loader:/chat] INFO  o.r.net.websocket.WebSocketPlugin - WebSocketPlugin application: org.red5.demos.chat.Application@32db33c5
+2018-05-08 21:37:10,782 [Loader:/chat] INFO  o.red5.net.websocket.WebSocketScope - Application scope: Scope [name=chat, path=/default, type=APPLICATION, autoStart=true, creationTime=1525786630748, depth=1, enabled=true, running=false]
+2018-05-08 21:37:10,782 [Loader:/chat] INFO  o.red5.net.websocket.WebSocketScope - WebSocket app added: chat
+2018-05-08 21:37:10,783 [Loader:/chat] INFO  o.r.n.w.WebSocketScopeManager - addWebSocketScope: WebSocketScope [path=/chat, listeners=1, connections=0]
+2018-05-08 21:37:10,783 [Loader:/chat] INFO  o.red5.net.websocket.WebSocketScope - WebSocket scope added
+2018-05-08 21:37:10,790 [Loader:/vod] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue May 08 21:37:10 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@21d03963
+2018-05-08 21:37:10,791 [Loader:/vod] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2018-05-08 21:37:10,805 [Loader:/vod] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:10,806 [Loader:/vod] INFO  org.red5.server.scope.WebScope - Set server [Server@58c520abmap['/chat' -> 'default', '/live' -> 'default', '/' -> 'default']]
+2018-05-08 21:37:10,807 [Loader:/vod] INFO  org.red5.server.Server - Add mapping global: default host:  context: vod
+2018-05-08 21:37:10,812 [Loader:/installer] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue May 08 21:37:10 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@21d03963
+2018-05-08 21:37:10,813 [Loader:/installer] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2018-05-08 21:37:10,829 [Loader:/installer] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:10,830 [Loader:/installer] INFO  org.red5.server.scope.WebScope - Set server [Server@58c520abmap['/chat' -> 'default', '/live' -> 'default', '/vod' -> 'default', '/' -> 'default']]
+2018-05-08 21:37:10,830 [Loader:/installer] INFO  org.red5.server.Server - Add mapping global: default host: localhost context: installer
+2018-05-08 21:37:10,831 [Loader:/installer] INFO  org.red5.server.Server - Add mapping global: default host: localhost:5080 context: installer
+2018-05-08 21:37:10,835 [Loader:/installer] INFO  org.red5.server.service.Installer - Installer service created
+2018-05-08 21:37:10,847 [Loader:/oflaDemo] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue May 08 21:37:10 CST 2018]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@21d03963
+2018-05-08 21:37:10,849 [Loader:/oflaDemo] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2018-05-08 21:37:10,865 [Loader:/oflaDemo] INFO  org.red5.server.Context - Setting parent bean factory as core
+2018-05-08 21:37:10,866 [Loader:/oflaDemo] INFO  org.red5.server.scope.WebScope - Set server [Server@58c520abmap['/chat' -> 'default', '/live' -> 'default', '/vod' -> 'default', '/' -> 'default', 'localhost:5080/installer' -> 'default', 'localhost/installer' -> 'default']]
+2018-05-08 21:37:10,867 [Loader:/oflaDemo] INFO  org.red5.server.Server - Add mapping global: default host:  context: oflaDemo

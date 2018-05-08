@@ -1,0 +1,5 @@
+2018-05-08 21:37:10,536 [0.0.0.0-startStop-1] INFO  ROOT - Starting up context: oflaDemo
+2018-05-08 21:37:10,867 [Loader:/oflaDemo] DEBUG org.red5.demos.oflaDemo.Application - start: Scope [name=oflaDemo, path=/default, type=APPLICATION, autoStart=true, creationTime=1525786630866, depth=1, enabled=true, running=false]
+2018-05-08 21:37:10,867 [Loader:/oflaDemo] DEBUG org.red5.demos.oflaDemo.Application - appStart: Scope [name=oflaDemo, path=/default, type=APPLICATION, autoStart=true, creationTime=1525786630866, depth=1, enabled=true, running=false]
+2018-05-08 21:37:10,868 [Loader:/oflaDemo] INFO  org.red5.demos.oflaDemo.Application - oflaDemo appStart
+2018-05-08 21:37:10,871 [Loader:/oflaDemo] INFO  org.red5.demos.oflaDemo.DemoService - oflaDemo DemoService created

@@ -1,0 +1,5 @@
+2018-05-08 21:37:10,339 [0.0.0.0-startStop-1] INFO  ROOT - Starting up context: chat
+2018-05-08 21:37:10,752 [Loader:/chat] DEBUG org.red5.demos.chat.Application - start: Scope [name=chat, path=/default, type=APPLICATION, autoStart=true, creationTime=1525786630748, depth=1, enabled=true, running=false]
+2018-05-08 21:37:10,752 [Loader:/chat] TRACE org.red5.demos.chat.Application - Plugins: null
+2018-05-08 21:37:10,753 [Loader:/chat] INFO  org.red5.demos.chat.Application - Chat starting
+2018-05-08 21:37:10,784 [Loader:/chat] DEBUG org.red5.demos.chat.Application - appStart: Scope [name=chat, path=/default, type=APPLICATION, autoStart=true, creationTime=1525786630748, depth=1, enabled=true, running=false]
