@@ -6,43 +6,41 @@
 
     <!-- DEFAULT GLOBAL CONTEXT -->
 
-    <bean id="global.clientRegistry" class="org.red5.server.ClientRegistry" />
+    <bean id="global.clientRegistry" class="org.red5.server.ClientRegistry"/>
 
     <bean id="global.serviceInvoker" class="org.red5.server.service.ServiceInvoker">
         <property name="serviceResolvers">
             <set>
-                <bean id="scopeServiceResolver" class="org.red5.server.service.ScopeServiceResolver" />
-                <bean id="handlerServiceResolver" class="org.red5.server.service.HandlerServiceResolver" />
-                <bean id="contextServiceResolver" class="org.red5.server.service.ContextServiceResolver" />
+                <bean id="scopeServiceResolver" class="org.red5.server.service.ScopeServiceResolver"/>
+                <bean id="handlerServiceResolver" class="org.red5.server.service.HandlerServiceResolver"/>
+                <bean id="contextServiceResolver" class="org.red5.server.service.ContextServiceResolver"/>
             </set>
         </property>
     </bean>
 
-    <bean id="global.mappingStrategy" class="org.red5.server.MappingStrategy" />
+    <bean id="global.mappingStrategy" class="org.red5.server.MappingStrategy"/>
 
-    <bean id="global.context" class="org.red5.server.Context" autowire="byType" />
+    <bean id="global.context" class="org.red5.server.Context" autowire="byType"/>
 
-    <bean id="global.handler" class="org.red5.server.CoreHandler" autowire="byType" />
+    <bean id="global.handler" class="org.red5.server.CoreHandler" autowire="byType"/>
 
     <bean id="global.scope" class="org.red5.server.scope.GlobalScope" init-method="register">
-        <property name="server" ref="red5.server" />
-        <property name="context" ref="global.context" />
-        <property name="handler" ref="global.handler" />
-        <property name="persistenceClass">
-            <value>org.red5.server.persistence.FilePersistence</value>
-        </property>
+        <property name="server" ref="red5.server"/>
+        <property name="context" ref="global.context"/>
+        <property name="handler" ref="global.handler"/>
+        <property name="persistenceClass" value="org.red5.server.persistence.FilePersistence"/>
         <property name="securityHandlers">
             <set>
                 <bean class="org.red5.server.scope.ScopeSecurityHandler">
                     <!-- By default, connections to global scope are denied -->
-                    <property name="connectionAllowed" value="false" />
+                    <property name="connectionAllowed" value="false"/>
                 </bean>
             </set>
         </property>
     </bean>
 
     <bean id="red5.scopeResolver" class="org.red5.server.scope.ScopeResolver">
-        <property name="globalScope" ref="global.scope" />
+        <property name="globalScope" ref="global.scope"/>
     </bean>
 
 </beans>
